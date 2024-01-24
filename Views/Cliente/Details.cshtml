@@ -1,0 +1,68 @@
+﻿@model SistemaCadastroBalanço.database.Cadastros.Clientes
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Clientes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.idCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idadepet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idadepet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.observacoes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.observacoes)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Voltar para Listagem", "Index")
+</p>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
